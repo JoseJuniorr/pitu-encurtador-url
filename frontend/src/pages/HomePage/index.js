@@ -2,8 +2,6 @@ import React from "react";
 
 import ShortnerService from "../../services/shortnerService";
 
-
-
 import Header from "../../components/Header";
 
 import {
@@ -15,7 +13,7 @@ import {
   Spinner,
 } from "react-bootstrap";
 
-import { ContentContainer, Form } from "./styles";
+import { ContentContainer, Form, AdsBlock } from "./styles";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -78,7 +76,9 @@ class HomePage extends React.Component {
                   onChange={(e) => this.setState({ url: e.target.value })}
                 />
                 <InputGroup.Append>
-                  <Button variant="primary" type="submit">Encurtar</Button>
+                  <Button variant="primary" type="submit">
+                    Encurtar
+                  </Button>
                 </InputGroup.Append>
               </InputGroup>
 
@@ -113,6 +113,9 @@ class HomePage extends React.Component {
 
               {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
             </Form>
+          </ContentContainer>
+          <ContentContainer>
+            <AdsBlock>Adsense</AdsBlock>
           </ContentContainer>
         </Container>
       </>
