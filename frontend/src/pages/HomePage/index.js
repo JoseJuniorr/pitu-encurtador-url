@@ -4,6 +4,8 @@ import ShortnerService from "../../services/shortnerService";
 
 import Header from "../../components/Header";
 
+import vars from "../../configs/vars";
+
 import {
   Container,
   InputGroup,
@@ -90,7 +92,7 @@ class HomePage extends React.Component {
                     <InputGroup className="mb-3">
                       <FormControl
                         autoFocus={true}
-                        defaultValue={`https://pitu.tk/${code}`}
+                        defaultValue={vars.HOST_APP + code}
                         ref={(input) => (this.inputURL = input)}
                       />
                       <InputGroup.Append>
@@ -104,8 +106,8 @@ class HomePage extends React.Component {
                     </InputGroup>
 
                     <p>
-                      Para acompanhar as estatísticas, acesse https://pitu.tk/
-                      {code}/stats
+                      Para acompanhar as estatísticas, acesse{" "}
+                      {vars.HOST_APP + code}/stats
                     </p>
                   </>
                 )

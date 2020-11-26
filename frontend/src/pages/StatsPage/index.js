@@ -5,6 +5,8 @@ import { Container } from "react-bootstrap";
 
 import ShortnerService from "../../services/shortnerService";
 
+import vars from "../../configs/vars";
+
 import { parseISO, formatRelative } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
 
@@ -69,7 +71,7 @@ class StatsPage extends React.Component {
         ) : (
           <StatsContainer className="text-center">
             <p>
-              <b>https://domain.tk/{shortenedURL.code}</b>
+              <b>{vars.HOST_APP + shortenedURL.code}</b>
             </p>
             <p>
               Redireciona para: <br />
