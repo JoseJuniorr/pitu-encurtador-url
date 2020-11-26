@@ -4,8 +4,8 @@
 
 ## Links da aplicação em produção - deploy na AWS
 
-[Pitu - Encurtador de Url Web](http://www.pituencurtador.tk/)
-[Pitu - Encurtador de Url API](http://api.pituencurtador.tk:4000/)
+* [Pitu - Encurtador de Url Web](http://www.pituencurtador.tk/)
+* [Pitu - Encurtador de Url API](http://api.pituencurtador.tk:4000/)
 
 
 ### Features do Projeto
